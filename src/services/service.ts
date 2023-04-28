@@ -1,0 +1,1 @@
+export const TODO_SERVICE = 'http://localhost:8888/todo';

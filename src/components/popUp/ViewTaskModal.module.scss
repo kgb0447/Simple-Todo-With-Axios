@@ -1,0 +1,153 @@
+@import url('../../styles/variable.scss');
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(243, 242, 242);
+    z-index: 10;
+
+    .wrapper{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-52%);
+        width: 600px;
+        height: 90dvh;
+        border-radius: 10px 10px;
+        background: #ffff;
+
+        header{
+            width: 100%;
+            height: 60px;
+            border-radius: 10px 10px 0 0;
+            padding: 10px;
+
+            p{
+                color: rgb(55, 182, 129);
+                text-align: left;
+                font-size: 30px;
+            }
+        }
+        section{
+            padding: 10px;
+            
+            .todoTitle{
+                border-radius: 10px;
+                border: rgb(65, 64, 64) solid .5px;
+                padding: 0 10px;
+                font-size: 30px;
+                font-weight: 600;
+                text-transform: capitalize;
+            }
+
+            .todoDetails {
+                margin-top: 10px;
+                border-radius: 10px;
+                border: rgb(65, 64, 64) solid .5px;
+                width: 100%;
+                height: 400px;
+                text-transform: capitalize;
+                padding: 0 10px;
+
+            }
+        }
+       
+        .modalBtnWrapper {
+            position: absolute;
+            bottom: 40px;
+            right: 10px;
+            display: flex;
+
+            .icons {
+                width: 70px;
+                height: 80px;
+                border-radius: 4px;
+                bottom: 0;
+                margin-right: 20px;
+                transition: 0.7s;
+                cursor: pointer;
+
+                &:hover {
+                    scale: 1.1;
+                }
+            
+                &.editIcon {
+                    position: relative;
+                    width: 50px;
+                    height: 50px;
+                    background: url('../../assets/img/icons/editIcon@2x.png') ;
+                    background-size: 100% 100%; 
+
+                   &:after{
+                    content: 'Edit';
+                    position: absolute;
+                    bottom: -20px;
+                    left: 50%;
+                    color: #645b5b;
+                    font-size: 10px;
+                    transform: translateX(-50%);
+                   }
+                   
+                }
+                &.saveChangesIcon {
+                    position: relative;
+                    width: 50px;
+                    height: 50px;
+                    background: url('../../assets/img/icons/addNew@2x.png') ;
+                    background-size: 100% 100%; 
+
+                   &:after{
+                    content: 'Save';
+                    position: absolute;
+                    bottom: -20px;
+                    left: 50%;
+                    color: #645b5b;
+                    font-size: 10px;
+                    transform: translateX(-50%);
+                   }
+                   
+                }
+                &.deleteIcon{
+                    position: relative;
+                    width: 50px;
+                    height: 50px;
+                    background: url('../../assets/img/icons/deleteIcon@2x.png');
+                    background-size: 100% 100%;
+
+                    &:after{
+                        content: 'Delete';
+                        position: absolute;
+                        bottom: -20px;
+                        left: 50%;
+                        color: #645b5b;
+                        font-size: 10px;
+                        transform: translateX(-50%);
+                        
+                       }
+                   
+                }
+                &.completeIcon{
+                    position: relative;
+                    width: 50px;
+                    height: 50px;
+                    background: url('../../assets/img/icons/complete_icon@2x.png') ;
+                    background-size: 100% 100%; 
+
+                    &:after{
+                        content: 'Complete';
+                        position: absolute;
+                        bottom: -20px;
+                        left: 50%;
+                        color: #645b5b;
+                        font-size: 10px;
+                        transform: translateX(-50%);
+                    }
+                }
+                    
+            }
+        }
+    } 
+}

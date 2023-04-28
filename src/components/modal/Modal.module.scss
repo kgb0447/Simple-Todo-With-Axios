@@ -1,0 +1,77 @@
+.wrapper{    
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #d6d6d6;
+
+    form{
+        position: relative;
+        top: 10px;
+        margin: auto;
+        border-radius: 10px;
+        border: solid 1px #353434;
+        padding: 20px;
+        width: 600px;
+        height: 90dvh;
+        background-color: #ffff;
+        
+        .closeIcon{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        div{
+            width: 100%;
+            font-size:26px;
+        }
+
+        input{
+            border-radius: 10px;
+            padding: 0 10px;
+            width: 100%;
+            height: 50px;
+            font-size: 20px;
+            outline: transparent;
+            border: solid .5px #353434;
+            
+        }
+
+        input[type='submit']{
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 64px;
+            height: 64px;
+            background: url('../../assets/img/icons/addNew@2x.png');
+            background-size: 100% 100%;
+        }
+    
+        textarea{
+            border-radius: 10px;
+            outline: transparent;
+            padding: 10px;
+            font-size: 16px;
+            width: 100%;
+            height: 260px;
+            resize: none;
+            overflow-y: auto;
+        }
+        .addIcon{
+            font-size: 30px;
+            cursor: pointer;
+        }
+        input[type='submit'] {
+            border: transparent;
+            cursor: pointer;
+
+            &:disabled {
+                opacity: 0.4;
+              }
+        }
+    }
+}
